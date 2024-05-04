@@ -16,7 +16,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/get_graph');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/get_graph');
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -45,7 +45,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://status-stage.savibenefits.com/get_upload_details');
+        curl_setopt($ch, CURLOPT_URL, 'https://status-stage.carebidsexchange.com/get_upload_details');
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -73,7 +73,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/get_remark');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/get_remark');
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -101,7 +101,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/get_payers');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/get_payers');
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -129,7 +129,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://status-stage.savibenefits.com/get_file_details');
+        curl_setopt($ch, CURLOPT_URL, 'https://status-stage.carebidsexchange.com/get_file_details');
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -157,7 +157,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/get_rc_ins');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/get_rc_ins');
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -188,7 +188,7 @@ class ediApisController extends Controller
     public function eob_upload(Request $request)
     {
         $file = $request->file->store('client_uploaded_files', 'public');
-        $filepath = 'https://apis-stage.savibenefits.com/storage/' . $file;
+        $filepath = 'https://backend.carebidsexchange.com/storage/' . $file;
         // sleep(5);
         $ch = curl_init();
         $file_info_json = array(
@@ -201,7 +201,7 @@ class ediApisController extends Controller
             "claim_type"  => $request->claim_type
         );
         // 169.61.216.28
-        curl_setopt($ch, CURLOPT_URL, 'https://upload-beta.savibenefits.com/eob_load');
+        curl_setopt($ch, CURLOPT_URL, 'https://upload-beta.carebidsexchange.com/eob_load');
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
@@ -209,7 +209,7 @@ class ediApisController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_TIMEOUT, 120);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($file_info_json));
-        // curl -X POST -H "Content-Type: application/json" -d '{ "provider_id": "19", "file": "https://apis.carepays.com/public/home/exsania/healthcareiq.com/imran_work/apis.carepays.com/storageclient_uploaded_files/x6DAXcwIvvRVStZONSUrLILW5pEqZ6l7kOKH4qis.zip", "filename": "vb_835.zip", "date_upload": "2021-06-23", "time_upload": "07:43", "email": "email@grr.la", "claim_type": "835" }' https://upload-stage.savibenefits.com/eob_load
+        // curl -X POST -H "Content-Type: application/json" -d '{ "provider_id": "19", "file": "https://apis.carepays.com/public/home/exsania/healthcareiq.com/imran_work/apis.carepays.com/storageclient_uploaded_files/x6DAXcwIvvRVStZONSUrLILW5pEqZ6l7kOKH4qis.zip", "filename": "vb_835.zip", "date_upload": "2021-06-23", "time_upload": "07:43", "email": "email@grr.la", "claim_type": "835" }' https://upload-stage.carebidsexchange.com/eob_load
         try {
             $response = curl_exec($ch);
             print_r($response);
@@ -228,7 +228,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/get_claim837');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/get_claim837');
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -290,7 +290,7 @@ class ediApisController extends Controller
         
         $ch = curl_init();
         //
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/edi');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/edi');
         //curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -316,7 +316,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/get_all');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/get_all');
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
@@ -332,7 +332,7 @@ class ediApisController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/get_everything');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/get_everything');
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);

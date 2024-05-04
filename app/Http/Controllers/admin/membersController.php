@@ -58,7 +58,7 @@ class membersController extends Controller
     {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://graph-stage.savibenefits.com/get_all');
+        curl_setopt($ch, CURLOPT_URL, 'https://graph.carebidsexchange.com/get_all');
         curl_setopt( $ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_VERBOSE, 1);
