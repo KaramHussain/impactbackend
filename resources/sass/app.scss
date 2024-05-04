@@ -1,0 +1,185 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.pointer{
+	cursor:pointer;
+}
+input[type="radio"] {
+  display:none;
+}
+
+input[type="radio"] + label {
+  position:relative;
+  padding-left:30px;
+}
+
+.radio-button {
+  position: absolute;
+  top:2px;
+  left:5px;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  display:inline-block;
+  background:#ddd;
+
+  &::after {
+      content:'';
+      position: absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform:translate(-50%, -50%);
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      display:inline-block;
+      background:rgb(7, 119, 67);//#2196F3;
+      opacity:0;
+      transition:opacity .0.5s;
+  }
+
+}
+
+input[type="radio"]:checked + label .radio-button::after {
+  opacity:1;
+}
+
+input[type="radio"]:checked + label .radio-button {
+  border:2px solid rgb(7, 119, 67);//#2196F3;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width:100%;
+  height:15px;
+  border-radius: 5px;
+  background: linear-gradient(to right bottom, #28b485, #55c57a);
+  outline: none;
+  /* opacity: 0.7; */
+  -webkit-transition: .2s;
+  transition: all .2s;
+  
+  /* &:hover {
+      opacity: 1;
+  } */
+
+}
+
+.slider::webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:linear-gradient(to right bottom, #28b485, #55c57a);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:linear-gradient(to right bottom, #28b485, #55c57a);
+  cursor: pointer;
+}
+.slider::-moz-slider-thumb::before,
+.slider::webkit-slider-thumb::before {
+  content:'80%';
+}
+.to-present {
+  pointer-events:none;
+  opacity:0.9;
+}
+.time-input {
+  position:relative;
+}
+.time-input ~ i {
+  position:absolute;
+  top:63%;
+  right:8%;
+  cursor:pointer;
+  /* transform:translateY(-50%); */
+}
+
+// checkbox styling starts
+
+.checkbox {
+  &__container {
+      position:relative;
+      padding-left: 30px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: inherit;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      
+      &--block {
+          display:block;
+      }
+
+      input {
+          position:absolute;
+          opacity:0;
+          cursor:pointer;
+          width:0;
+          height:0;
+      }
+      
+      .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 18px;
+          width: 18px;
+          background-color: #eee;
+          margin-top:3.4px;
+          /* The checkmark/indicator (hidden when not checked) */    
+          &::after {
+              content: "";
+              position: absolute;
+              opacity:0;
+              left: 7px;
+              top: 3px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+              transition:opacity .0.5s;
+          }
+      }
+  }
+}
+//background change on checkbox hover effect
+.checkbox__container:hover input ~ .checkmark {
+  background:#ccc;
+}
+
+//add a green background when the checkbox is checked
+
+.checkbox__container input:checked ~ .checkmark {
+  background:rgb(7, 119, 67);
+}
+
+//show checkmark when checkbox is checked
+.checkbox__container input:checked ~ .checkmark::after {
+  opacity: 1;
+}
+
+// checkbox styling ends

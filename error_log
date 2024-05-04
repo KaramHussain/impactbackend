@@ -1,0 +1,67 @@
+[10-Aug-2020 17:30:39 UTC] PHP Warning:  require(/home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/autoload.php): failed to open stream: No such file or directory in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan on line 18
+[10-Aug-2020 17:30:39 UTC] PHP Fatal error:  require(): Failed opening required '/home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan on line 18
+[10-Aug-2020 17:30:52 UTC] PHP Warning:  require(/home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/autoload.php): failed to open stream: No such file or directory in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan on line 18
+[10-Aug-2020 17:30:52 UTC] PHP Fatal error:  require(): Failed opening required '/home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan on line 18
+[10-Aug-2020 17:32:30 UTC] PHP Warning:  require(/home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/autoload.php): failed to open stream: No such file or directory in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan on line 18
+[10-Aug-2020 17:32:30 UTC] PHP Fatal error:  require(): Failed opening required '/home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan on line 18
+[10-Aug-2020 22:34:53 Asia/Karachi] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[10-Aug-2020 22:37:05 Asia/Karachi] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/symfony/translation/TranslatorInterface.php on line 24
+[11-Aug-2020 20:00:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/bootstrap/app.php:14
+Stack trace:
+#0 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan(20): require_once()
+#1 {main}
+  thrown in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/bootstrap/app.php on line 14
+[11-Aug-2020 20:15:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/bootstrap/app.php:14
+Stack trace:
+#0 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan(20): require_once()
+#1 {main}
+  thrown in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/bootstrap/app.php on line 14
+[11-Aug-2020 20:16:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/bootstrap/app.php:14
+Stack trace:
+#0 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/artisan(20): require_once()
+#1 {main}
+  thrown in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/bootstrap/app.php on line 14
+[12-Aug-2020 01:36:28 Asia/Karachi] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/app/Exceptions/Handler.php on line 8
+[12-Aug-2020 01:36:28 Asia/Karachi] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:804
+Stack trace:
+#0 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(804): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(682): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(266): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(800): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\ in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 806
+[12-Aug-2020 01:36:47 Asia/Karachi] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/app/Exceptions/Handler.php on line 8
+[12-Aug-2020 01:36:47 Asia/Karachi] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:804
+Stack trace:
+#0 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(804): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(682): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(266): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(800): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\ in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 806
+[12-Aug-2020 01:37:58 Asia/Karachi] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/app/Exceptions/Handler.php on line 8
+[12-Aug-2020 01:37:58 Asia/Karachi] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:804
+Stack trace:
+#0 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(804): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(682): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(266): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(800): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\ in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 806
+[12-Aug-2020 01:40:01 Asia/Karachi] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/app/Exceptions/Handler.php on line 8
+[12-Aug-2020 01:40:01 Asia/Karachi] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:804
+Stack trace:
+#0 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(804): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(682): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(266): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(800): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\ in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 806
+[12-Aug-2020 01:40:17 Asia/Karachi] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Throwable $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Exception $e) in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/app/Exceptions/Handler.php on line 8
+[12-Aug-2020 01:40:17 Asia/Karachi] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:804
+Stack trace:
+#0 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(804): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(682): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(266): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(800): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\ in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 806
+[11-Aug-2020 20:59:40 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[11-Aug-2020 22:20:09 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[11-Aug-2020 22:25:36 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[11-Aug-2020 22:26:59 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[11-Aug-2020 22:43:47 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[11-Aug-2020 23:00:12 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[11-Aug-2020 23:03:10 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[11-Aug-2020 23:07:39 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[12-Aug-2020 13:20:18 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/exsania/healthcareiq.com/imran_work/apis.carepays.com/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
