@@ -201,7 +201,7 @@ class ediApisController extends Controller
             "claim_type"  => $request->claim_type
         );
         // 169.61.216.28
-        curl_setopt($ch, CURLOPT_URL, 'https://upload-beta.carebidsexchange.com/eob_load');
+        curl_setopt($ch, CURLOPT_URL, 'https://upload-stage.carebidsexchange.com/eob_load');
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
